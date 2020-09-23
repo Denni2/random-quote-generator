@@ -5,6 +5,8 @@ html, body {
     width: 100%;
 
     overflow: hidden;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #main-page {
@@ -17,7 +19,7 @@ html, body {
     flex-wrap: wrap;
     flex-direction: column;
 
-    background-color: burlywood;
+    background-color: rgb(179, 216, 241);
 
     padding: 20px;
 
@@ -28,16 +30,81 @@ html, body {
     width: 40vw;
 
     margin: 10px;
+    padding: 10px 30px;
+    border-radius: 5px;
 
-    box-shadow: inset 2px 2px 5px 1px #000000, inset -2px -2px 5px 1px #ffffff;
+    box-shadow: inset -2px 2px 5px 1px #000000, inset 2px -2px 5px 1px #ffffff;
+
+} 
+
+p {
+    text-align: center;
+    font-weight: 700;
 }
 
 #submit {
-    margin: 0 50%;
-    font-size: 100%;
+    margin: 0 auto;
+    padding: 0 30px;
+    font-size: larger;
+    font-weight: 900;
     border-radius: 5px;
+
+    color: dimgray;
+    
+    opacity: 0.6;
+
+    cursor: pointer;
+
+
+}
+
+#their-quote {
+    font-size: smaller;
+    font-weight: 700;
+    text-align: center;
+
+    animation: .85s slides;
+}
+
+
+@keyframes slides {
+    from {
+        margin-left: -100%;
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+
+
+    to {
+        margin-left: 0%;
+        opacity: 1;
+    }
+
 }
 
 #writers {
     text-align: right;
+    animation: 1s slide-right;
+}
+
+@keyframes slide-right {
+    from {
+        margin-right: -100%;
+        opacity: 0;
+    }
+    80% {opacity:0}
+    to {
+        margin-right: 0%;
+        opacity: 1;
+    }
+}
+
+span {
+    font-size: xx-large;
+    font-style: italic;
+    
 }

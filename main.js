@@ -1,3 +1,4 @@
+
 let quotes = {
     'John Piper' : 'It is better to lose your life than to waste it',
     'John Bunyan' : 'It is said that in some countries trees will grow, but will bear no fruit because there is no winter there',
@@ -23,7 +24,7 @@ document.getElementById('submit').onclick = function nextQuote () {
     for (x = 0 ; x < val; x++){
         vals = Math.floor(Math.random() * val);
     }
-    return document.getElementById('quotes').innerHTML =  "<p><strong><i>" + Object.values(quotes)[vals] + "</i></strong></p> " +  "<p id='writers'><em> ~ " + Object.keys(quotes)[vals] + "</em></p>";
+    return document.getElementById('quotes').innerHTML =  '<p id="their-quote"><strong><i><span>"</span>' + Object.values(quotes)[vals] + '</i></strong></p>' +  "<p id='writers'><em> ~ " + Object.keys(quotes)[vals] + "</em></p>";
 }
 
 
